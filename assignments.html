@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment Details — Student Hub</title>
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="dashboard.html">
+      <img src="assets/images/logo-mark.svg" width="20" height="20" alt="Student Hub logo">
+      <span>STUDENT<br>HUB</span>
+    </a>
+    <nav class="main-nav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="courses.html">Courses</a>
+      <a href="assignments.html" class="active">Assignments</a>
+      <a href="attendance.html">Attendance</a>
+      <a href="results.html">Results</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-outline" href="index.html" onclick="studentHubLogout(); return false;">Logout</a>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-nav">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="courses.html">Courses</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="results.html">Results</a>
+    <a href="profile.html">Profile</a>
+    <a href="index.html" onclick="studentHubLogout(); return false;">Logout</a>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="eyebrow">Tasks</div>
+    <h1>Assignment Details</h1>
+    <p>Track assignment deadlines and submission status.</p>
+  </div>
+  <div class="divider"></div>
+
+  <div class="content-wrap">
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr><th>Subject</th><th>Assignment</th><th>Due Date</th><th>Status</th><th>Action</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web Development</td>
+            <td>Responsive Website</td>
+            <td>22 Jul 2026</td>
+            <td><span class="badge badge-amber">Pending</span></td>
+            <td><a class="action-link" href="#">Submit</a></td>
+          </tr>
+          <tr>
+            <td>Database Management</td>
+            <td>SQL Queries</td>
+            <td>24 Jul 2026</td>
+            <td><span class="badge badge-green">Submitted</span></td>
+            <td><a class="action-link" href="#">View</a></td>
+          </tr>
+          <tr>
+            <td>Computer Networks</td>
+            <td>Network Diagram</td>
+            <td>29 Jul 2026</td>
+            <td><span class="badge badge-amber">Pending</span></td>
+            <td><a class="action-link" href="#">Submit</a></td>
+          </tr>
+          <tr>
+            <td>Mathematics</td>
+            <td>Matrix and Calculus Practice</td>
+            <td>05 Aug 2026</td>
+            <td><span class="badge badge-green">Submitted</span></td>
+            <td><a class="action-link" href="#">View</a></td>
+          </tr>
+          <tr>
+            <td>Fundamentals of Data Structures and Algorithms</td>
+            <td>Sorting Algorithm Analysis</td>
+            <td>09 Aug 2026</td>
+            <td><span class="badge badge-amber">Pending</span></td>
+            <td><a class="action-link" href="#">Submit</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">© 2026 Student Hub. All rights reserved.</footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

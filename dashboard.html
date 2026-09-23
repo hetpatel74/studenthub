@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Student Hub</title>
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="dashboard.html">
+      <img src="assets/images/logo-mark.svg" width="20" height="20" alt="Student Hub logo">
+      <span>STUDENT<br>HUB</span>
+    </a>
+    <nav class="main-nav">
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="courses.html">Courses</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="attendance.html">Attendance</a>
+      <a href="results.html">Results</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-outline" href="index.html" onclick="studentHubLogout(); return false;">Logout</a>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-nav">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="courses.html">Courses</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="results.html">Results</a>
+    <a href="profile.html">Profile</a>
+    <a href="index.html" onclick="studentHubLogout(); return false;">Logout</a>
+  </div>
+</header>
+
+<main>
+  <div class="dash-head">
+    <div>
+      <div class="eyebrow">Overview</div>
+      <h1 style="margin:0 0 8px;font-size:32px;">Student Dashboard</h1>
+      <p style="color:var(--text-muted);margin:0;" id="dashGreeting">Welcome back, Yug. Here is your academic summary.</p>
+    </div>
+    <a class="btn btn-primary" href="profile.html">View Profile</a>
+  </div>
+  <div class="divider"></div>
+
+  <div class="content-wrap">
+    <div class="stat-grid-4">
+      <div class="stat-card">
+        <div class="stat-label">Courses</div>
+        <div class="stat-value">5</div>
+        <div class="stat-sub">Active this semester</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Attendance</div>
+        <div class="stat-value">86%</div>
+        <div class="stat-sub">Overall percentage</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Assignments</div>
+        <div class="stat-value">3</div>
+        <div class="stat-sub">Pending submissions</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Result</div>
+        <div class="stat-value">A</div>
+        <div class="stat-sub">Current grade average</div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="panel">
+        <h3>Today Schedule</h3>
+        <div class="schedule-row"><span class="time-pill">09:00</span> Web Development</div>
+        <div class="schedule-row"><span class="time-pill">11:00</span> Database Management</div>
+        <div class="schedule-row"><span class="time-pill">02:00</span> Computer Networks</div>
+        <div class="schedule-row"><span class="time-pill">03:30</span> Mathematics</div>
+        <div class="schedule-row"><span class="time-pill">05:00</span> Fundamentals of Data Structures and Algorithms</div>
+      </div>
+      <div class="panel">
+        <h3>Portal Modules</h3>
+        <a class="module-link" href="courses.html">Course Info</a>
+        <a class="module-link" href="assignments.html">Assignment Details</a>
+        <a class="module-link" href="attendance.html">Attendance Info</a>
+        <a class="module-link" href="results.html">Results</a>
+        <a class="module-link" href="contact.html">Contact Support</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">© 2026 Student Hub. All rights reserved.</footer>
+<script src="assets/js/script.js"></script>
+<script>
+  document.getElementById("dashGreeting").textContent =
+    "Welcome back, " + studentHubGreetingName() + ". Here is your academic summary.";
+</script>
+</body>
+</html>

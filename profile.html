@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile — Student Hub</title>
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="dashboard.html">
+      <img src="assets/images/logo-mark.svg" width="20" height="20" alt="Student Hub logo">
+      <span>STUDENT<br>HUB</span>
+    </a>
+    <nav class="main-nav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="courses.html">Courses</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="attendance.html">Attendance</a>
+      <a href="results.html">Results</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-outline" href="index.html" onclick="studentHubLogout(); return false;">Logout</a>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-nav">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="courses.html">Courses</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="results.html">Results</a>
+    <a href="index.html" onclick="studentHubLogout(); return false;">Logout</a>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="eyebrow">Account</div>
+    <h1>Student Profile</h1>
+    <p>Personal and academic details.</p>
+  </div>
+  <div class="divider"></div>
+
+  <div class="content-wrap">
+    <div class="profile-grid">
+      <div class="profile-card">
+        <div class="avatar">HP</div>
+        <h3>Het Patel</h3>
+        <div class="sub">CE Semester 3</div>
+        <a class="btn btn-primary btn-block" href="contact.html">Contact Office</a>
+      </div>
+
+      <div class="profile-detail-card">
+        <h3>Profile Details</h3>
+        <div class="detail-row"><span class="k">Email</span><span class="v">hetpatel@gmail.com</span></div>
+        <div class="detail-row"><span class="k">Enrollment No.</span><span class="v">D2026DCE145</span></div>
+        <div class="detail-row"><span class="k">Course</span><span class="v">Bachelor of Technology in Computer Engineering</span></div>
+        <div class="detail-row"><span class="k">Department</span><span class="v">Computer Science</span></div>
+        <div class="detail-row"><span class="k">Phone</span><span class="v">+91 95867 76855</span></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">© 2026 Student Hub. All rights reserved.</footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

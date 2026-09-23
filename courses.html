@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Info — Student Hub</title>
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="dashboard.html">
+      <img src="assets/images/logo-mark.svg" width="20" height="20" alt="Student Hub logo">
+      <span>STUDENT<br>HUB</span>
+    </a>
+    <nav class="main-nav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="courses.html" class="active">Courses</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="attendance.html">Attendance</a>
+      <a href="results.html">Results</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-outline" href="index.html" onclick="studentHubLogout(); return false;">Logout</a>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-nav">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="courses.html">Courses</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="results.html">Results</a>
+    <a href="profile.html">Profile</a>
+    <a href="index.html" onclick="studentHubLogout(); return false;">Logout</a>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="eyebrow">Academics</div>
+    <h1>Course Info</h1>
+    <p>Subjects and course progress for the current semester.</p>
+  </div>
+  <div class="divider"></div>
+
+  <div class="content-wrap">
+    <div class="course-grid">
+      <div class="course-card">
+        <div class="course-thumb"><img src="assets/images/course-web-development.svg" alt="Web development course illustration"></div>
+        <div class="course-body">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, responsive design, and project building.</p>
+          <div class="progress-text">Progress: 72%</div>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-thumb"><img src="assets/images/course-database.svg" alt="Database management course illustration"></div>
+        <div class="course-body">
+          <h3>Database Management</h3>
+          <p>SQL, normalization, joins, transactions, and database design.</p>
+          <div class="progress-text">Progress: 64%</div>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-thumb"><img src="assets/images/course-network.svg" alt="Computer networks course illustration"></div>
+        <div class="course-body">
+          <h3>Computer Networks</h3>
+          <p>Network models, routing, IP addressing, and communication protocols.</p>
+          <div class="progress-text">Progress: 81%</div>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-thumb"><img src="assets/images/course-mathematics.svg" alt="Mathematics course illustration"></div>
+        <div class="course-body">
+          <h3>Mathematics</h3>
+          <p>Algebra, calculus, probability, matrices, and problem-solving methods.</p>
+          <div class="progress-text">Progress: 78%</div>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-thumb"><img src="assets/images/course-data-structures.svg" alt="Data structures and algorithms course illustration"></div>
+        <div class="course-body">
+          <h3>Fundamentals of Data Structures and Algorithms</h3>
+          <p>Arrays, linked lists, stacks, queues, trees, sorting, and algorithm analysis.</p>
+          <div class="progress-text">Progress: 69%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">© 2026 Student Hub. All rights reserved.</footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
